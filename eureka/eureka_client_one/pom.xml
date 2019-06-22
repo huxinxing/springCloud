@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ml.eureka_client</groupId>
-    <artifactId>eureka_client_one</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>eureka_client_one</name>
+    <artifactId>eureka_client_hello</artifactId>
+    <version>1.0.1</version>
+    <name>eureka_client_hello</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -27,6 +27,10 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
         <dependency>

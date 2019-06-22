@@ -1,5 +1,5 @@
 server:
-  port: 8781
+  port: 8083
 spring:
   application:
     name: hello-consumer
@@ -7,3 +7,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8081/eureka
+info:
+  app.name: eureka_consumer_hello
+  company.name: www.zhifan.com
+  version: 1.0.1

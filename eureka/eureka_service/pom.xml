@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.ml.eurek_service</groupId>
     <artifactId>eureka_service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <name>eureka_service</name>
     <description>Demo project for Spring Boot</description>
 
