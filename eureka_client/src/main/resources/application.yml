@@ -1,0 +1,17 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: eureka-hello
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 20
+info:
+  app.name: eureka_client_hello
+  app.author: huxinxing
+  app.time: 2019/7/2 17:12
+  app.desc: hello test
