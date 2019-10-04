@@ -1,0 +1,33 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: zuul-server
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.191:8081/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 20
+    hostname: 192.168.0.191
+    prefer-ip-address: true
+info:
+  app.name: eureka_client_ribbon
+  app.author: huxinxing
+  app.time: 2019/7/2 17:12
+  app.desc: service-hello-world
+zuul:
+  routes:
+    hello-service:
+      path: /hello-service/**
+      serviceId: SERVICE-HELLO-WORLD
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
+    hello-world-application:
+      path: /hello-world-application/**
+      serviceId: APPLICATION-HELLO-WORLD
+      sensitiveHeaders: Access-Control-Allow-Origin,Access-Control-Allow-Methods
+
+

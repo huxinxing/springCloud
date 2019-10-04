@@ -1,0 +1,40 @@
+server:
+  port: 8087
+spring:
+  application:
+    name: service-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/huxinxing/springcloud_config.git
+          search-paths: config
+          username: huxinxing
+          password: xing886372
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 192.168.0.191
+    port: 5672
+    username: ml
+    password: xing886372
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.191:8081/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 20
+    hostname: 192.168.0.191
+info:
+  app.name: eureka_client_ribbon
+  app.author: huxinxing
+  app.time: 2019/7/2 17:12
+  app.desc: service-hello-world

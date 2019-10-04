@@ -1,0 +1,18 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: application-hello-world
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.0.191:8081/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 20
+    instance-id: application-hello-world
+info:
+  app.name: eureka_client_ribbon
+  app.author: huxinxing
+  app.time: 2019/7/2 17:12
+  app.desc: service-hello-world
